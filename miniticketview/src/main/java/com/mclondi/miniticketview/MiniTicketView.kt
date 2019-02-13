@@ -13,8 +13,6 @@ class MiniTicketView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
 
-    //todo ripple on non perforated part of view only
-
     private var minWidth: Int = 0
     private var minHeight: Int = 0
     private var perforationPositionPercent: Float = 0f

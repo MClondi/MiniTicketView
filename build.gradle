@@ -10,6 +10,8 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$toolsVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
     }
 }
 
@@ -19,6 +21,10 @@ allprojects {
         jcenter()
         
     }
+}
+
+subprojects {
+    tasks.withType(Javadoc).all { enabled = false }
 }
 
 task clean(type: Delete) {

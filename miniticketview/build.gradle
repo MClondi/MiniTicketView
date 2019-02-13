@@ -1,6 +1,30 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+ext {
+    bintrayRepo = 'android'
+    bintrayName = 'MiniTicketView'
+
+    publishedGroupId = 'com.mclondi'
+    libraryName = 'MiniTicketView'
+    artifact = 'miniticketview'
+    libraryVersion = '1.0.0'
+    libraryDescription = "See github for more info"
+
+    siteUrl = 'https://github.com/MClondi/MiniTicketView'
+    gitUrl = 'https://github.com/MClondi/MiniTicketView.git'
+
+    developerId = 'mclondi'
+    developerName = 'Marcel J'
+    developerEmail = 'mclondi@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion sdkVersion
@@ -29,3 +53,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     implementation "com.android.support:support-annotations:$annotationsVersion"
 }
+
+apply from: 'https://raw.githubusercontent.com/LissF/JCenter/master/script.gradle'
