@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <com.mclondi.miniticketview.MiniTicketView
+            android:id="@+id/ticketView"
+            android:layout_marginTop="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:elevation="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:ticketBackgroundDrawable="@drawable/bg_gradient_content"
+            app:ticketPerforationBackgroundDrawable="@drawable/bg_gradient_perforation"
+            app:ticketPerforationPositionPercent="20"
+            app:ticketScallopRadius="4dp"
+            app:ticketShowDivider="true"
+            app:ticketDividerPadding="1dp"
+            app:ticketDividerColor="@android:color/background_dark"
+            app:ticketDividerType="dash"
+            app:ticketDividerDashLength="4dp"
+            app:ticketCornerRadius="9dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"/>
+
+        </LinearLayout>
+
+    </com.mclondi.miniticketview.MiniTicketView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

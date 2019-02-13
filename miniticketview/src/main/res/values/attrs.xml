@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MiniTicketView">
+
+        <attr name="ticketBackgroundColor" format="color"/>
+        <attr name="ticketBackgroundDrawable" format="reference"/>
+
+        <attr name="ticketPerforationBackgroundColor" format="color"/>
+        <attr name="ticketPerforationBackgroundDrawable" format="reference"/>
+        <attr name="ticketPerforationPositionPercent" format="float"/>
+
+        <attr name="ticketScallopRadius" format="dimension"/>
+        <attr name="ticketScallopHide" format="boolean"/>
+
+        <attr name="ticketShowDivider" format="boolean"/>
+        <attr name="ticketDividerWidth" format="dimension"/>
+        <attr name="ticketDividerPadding" format="dimension"/>
+        <attr name="ticketDividerColor" format="color"/>
+        <attr name="ticketDividerType" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="dash" value="1"/>
+        </attr>
+        <attr name="ticketDividerDashGap" format="dimension"/>
+        <attr name="ticketDividerDashLength" format="dimension"/>
+
+        <attr name="ticketCornerRadius" format="dimension"/>
+
+    </declare-styleable>
+
+</resources>
