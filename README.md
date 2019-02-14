@@ -14,6 +14,18 @@ Small UI library for a custom frame layout
 
 **Using Gradle**
 
+in project module
+
+``` gradle
+allprojects {
+	repositories {
+        	maven { url 'https://dl.bintray.com/mclondi/android' }
+	}
+}
+```
+
+in app module
+
 ``` gradle
 implementation 'com.mclondi:miniticketview:1.0.0'
 ```
