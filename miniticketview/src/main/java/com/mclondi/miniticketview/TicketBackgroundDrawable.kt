@@ -41,41 +41,41 @@ class TicketBackgroundDrawable(typedArray: TypedArray, context: Context) : Drawa
 
     init {
         ticketBackgroundColor = typedArray.getColor(
-            R.styleable.MiniTicketView_ticketBackgroundColor,
+            R.styleable.MiniTicketView_miniTicketBackgroundColor,
             context.resources.getColor(android.R.color.white)
         )
-        ticketBackgroundDrawable = typedArray.getDrawable(R.styleable.MiniTicketView_ticketBackgroundDrawable)
+        ticketBackgroundDrawable = typedArray.getDrawable(R.styleable.MiniTicketView_miniTicketBackgroundDrawable)
 
         perforationBackgroundColor = typedArray.getColor(
-            R.styleable.MiniTicketView_ticketPerforationBackgroundColor,
+            R.styleable.MiniTicketView_miniTicketPerforationBackgroundColor,
             context.resources.getColor(android.R.color.white)
         )
         perforationBackgroundDrawable =
-            typedArray.getDrawable(R.styleable.MiniTicketView_ticketPerforationBackgroundDrawable)
+            typedArray.getDrawable(R.styleable.MiniTicketView_miniTicketPerforationBackgroundDrawable)
         perforationPositionPercent =
-            typedArray.getFloat(R.styleable.MiniTicketView_ticketPerforationPositionPercent, 25f)
+            typedArray.getFloat(R.styleable.MiniTicketView_miniTicketPerforationPositionPercent, 25f)
 
         scallopRadius =
-            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketScallopRadius, context.dpToPx(4f))
-        scallopHide = typedArray.getBoolean(R.styleable.MiniTicketView_ticketScallopHide, false)
+            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketScallopRadius, context.dpToPx(4f))
+        scallopHide = typedArray.getBoolean(R.styleable.MiniTicketView_miniTicketScallopHide, false)
 
-        showDivider = typedArray.getBoolean(R.styleable.MiniTicketView_ticketShowDivider, false)
+        showDivider = typedArray.getBoolean(R.styleable.MiniTicketView_miniTicketShowDivider, false)
         dividerWidth =
-            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketDividerWidth, context.dpToPx(2f))
+            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketDividerWidth, context.dpToPx(2f))
         dividerPadding =
-            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketDividerPadding, context.dpToPx(0f))
+            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketDividerPadding, context.dpToPx(0f))
         dividerColor = typedArray.getColor(
-            R.styleable.MiniTicketView_ticketDividerColor,
+            R.styleable.MiniTicketView_miniTicketDividerColor,
             context.resources.getColor(android.R.color.darker_gray)
         )
-        dividerType = typedArray.getInt(R.styleable.MiniTicketView_ticketDividerType, MiniTicketView.DividerType.NORMAL)
+        dividerType = typedArray.getInt(R.styleable.MiniTicketView_miniTicketDividerType, MiniTicketView.DividerType.NORMAL)
         dividerDashGap =
-            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketDividerDashGap, context.dpToPx(4f))
+            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketDividerDashGap, context.dpToPx(4f))
         dividerDashLength =
-            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketDividerDashLength, context.dpToPx(8f))
+            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketDividerDashLength, context.dpToPx(8f))
 
         cornerRadius =
-            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketCornerRadius, context.dpToPx(4f))
+            typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketCornerRadius, context.dpToPx(4f))
 
         backgroundDrawablePaint.color = -0x1000000
         backgroundDrawablePaint.xfermode = PorterDuffXfermode(PorterDuff.Mode.SRC_IN)

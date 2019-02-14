@@ -3,28 +3,28 @@
 
     <declare-styleable name="MiniTicketView">
 
-        <attr name="ticketBackgroundColor" format="color"/>
-        <attr name="ticketBackgroundDrawable" format="reference"/>
+        <attr name="miniTicketBackgroundColor" format="color"/>
+        <attr name="miniTicketBackgroundDrawable" format="reference"/>
 
-        <attr name="ticketPerforationBackgroundColor" format="color"/>
-        <attr name="ticketPerforationBackgroundDrawable" format="reference"/>
-        <attr name="ticketPerforationPositionPercent" format="float"/>
+        <attr name="miniTicketPerforationBackgroundColor" format="color"/>
+        <attr name="miniTicketPerforationBackgroundDrawable" format="reference"/>
+        <attr name="miniTicketPerforationPositionPercent" format="float"/>
 
-        <attr name="ticketScallopRadius" format="dimension"/>
-        <attr name="ticketScallopHide" format="boolean"/>
+        <attr name="miniTicketScallopRadius" format="dimension"/>
+        <attr name="miniTicketScallopHide" format="boolean"/>
 
-        <attr name="ticketShowDivider" format="boolean"/>
-        <attr name="ticketDividerWidth" format="dimension"/>
-        <attr name="ticketDividerPadding" format="dimension"/>
-        <attr name="ticketDividerColor" format="color"/>
-        <attr name="ticketDividerType" format="enum">
+        <attr name="miniTicketShowDivider" format="boolean"/>
+        <attr name="miniTicketDividerWidth" format="dimension"/>
+        <attr name="miniTicketDividerPadding" format="dimension"/>
+        <attr name="miniTicketDividerColor" format="color"/>
+        <attr name="miniTicketDividerType" format="enum">
             <enum name="normal" value="0"/>
             <enum name="dash" value="1"/>
         </attr>
-        <attr name="ticketDividerDashGap" format="dimension"/>
-        <attr name="ticketDividerDashLength" format="dimension"/>
+        <attr name="miniTicketDividerDashGap" format="dimension"/>
+        <attr name="miniTicketDividerDashLength" format="dimension"/>
 
-        <attr name="ticketCornerRadius" format="dimension"/>
+        <attr name="miniTicketCornerRadius" format="dimension"/>
 
     </declare-styleable>
 

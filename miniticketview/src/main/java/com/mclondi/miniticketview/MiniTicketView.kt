@@ -25,17 +25,17 @@ class MiniTicketView @JvmOverloads constructor(
             val typedArray = context.obtainStyledAttributes(attrs, R.styleable.MiniTicketView)
 
             val scallopRadius =
-                typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketScallopRadius, context.dpToPx(4f))
+                typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketScallopRadius, context.dpToPx(4f))
             val cornerRadius =
-                typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketCornerRadius, context.dpToPx(4f))
-            showDivider = typedArray.getBoolean(R.styleable.MiniTicketView_ticketShowDivider, false)
+                typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketCornerRadius, context.dpToPx(4f))
+            showDivider = typedArray.getBoolean(R.styleable.MiniTicketView_miniTicketShowDivider, false)
             dividerWidth =
-                typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketDividerWidth, context.dpToPx(2f))
+                typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketDividerWidth, context.dpToPx(2f))
             dividerPadding =
-                typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_ticketDividerPadding, context.dpToPx(0f))
+                typedArray.getDimensionPixelSize(R.styleable.MiniTicketView_miniTicketDividerPadding, context.dpToPx(0f))
 
             perforationPositionPercent =
-                typedArray.getFloat(R.styleable.MiniTicketView_ticketPerforationPositionPercent, 25f)
+                typedArray.getFloat(R.styleable.MiniTicketView_miniTicketPerforationPositionPercent, 25f)
 
             val biggerRadius = maxOf(scallopRadius, cornerRadius)
             minHeight = biggerRadius * 4
