@@ -11,7 +11,7 @@ ext {
     publishedGroupId = 'com.mclondi'
     libraryName = 'MiniTicketView'
     artifact = 'miniticketview'
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.2'
     libraryDescription = "See github for more info"
 
     siteUrl = 'https://github.com/MClondi/MiniTicketView'
@@ -32,8 +32,8 @@ android {
     defaultConfig {
         minSdkVersion minSdkVersionVersion
         targetSdkVersion sdkVersion
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.0.2"
     }
 
     buildTypes {

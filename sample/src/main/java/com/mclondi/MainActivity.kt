@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         ticketView.setOnClickListener {
             Toast.makeText(this, "Click", Toast.LENGTH_SHORT).show()
+            ticketView.backgroundDrawable?.perforationBackgroundDrawable = this.getDrawable(R.drawable.bg_gradient_content)
         }
     }
 }

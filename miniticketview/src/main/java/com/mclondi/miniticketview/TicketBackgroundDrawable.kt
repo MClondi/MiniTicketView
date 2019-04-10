@@ -25,8 +25,8 @@ class TicketBackgroundDrawable(typedArray: TypedArray, context: Context) : Drawa
     private var scallopHide: Boolean = false
     private var ticketBackgroundColor: Int = 0
     private var perforationBackgroundColor: Int = 0
-    private var ticketBackgroundDrawable: Drawable? = null
-    private var perforationBackgroundDrawable: Drawable? = null
+    var ticketBackgroundDrawable: Drawable? = null
+    var perforationBackgroundDrawable: Drawable? = null
 
     private var scallopRadius: Int = 0
     private var cornerRadius: Int = 0

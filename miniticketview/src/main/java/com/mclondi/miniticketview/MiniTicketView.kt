@@ -20,6 +20,8 @@ class MiniTicketView @JvmOverloads constructor(
     private var dividerWidth: Int = 0
     private var dividerPadding: Int = 0
 
+    var backgroundDrawable: TicketBackgroundDrawable? = null
+
     init {
         if (attrs != null) {
             val typedArray = context.obtainStyledAttributes(attrs, R.styleable.MiniTicketView)
@@ -41,12 +43,12 @@ class MiniTicketView @JvmOverloads constructor(
             minHeight = biggerRadius * 4
             minWidth = biggerRadius * 2
 
-            val background = TicketBackgroundDrawable(typedArray, context)
+            backgroundDrawable = TicketBackgroundDrawable(typedArray, context)
             val stateList = ColorStateList(
                 arrayOf(intArrayOf()),
                 intArrayOf(context.resources.getColor(android.R.color.white))
             )
-            setBackground( RippleDrawable( stateList, background,null ))
+            background = RippleDrawable( stateList, backgroundDrawable,null )
 
             typedArray.recycle()
         }
@@ -75,7 +77,6 @@ class MiniTicketView @JvmOverloads constructor(
         val ticketHeight = maxOf(measuredHeight, minHeight)
         setMeasuredDimension(perforationWidth.toInt() + measuredWidth, ticketHeight)
     }
-
 
     @kotlin.annotation.Retention(AnnotationRetention.SOURCE)
     @IntDef(DividerType.NORMAL, DividerType.DASH)
